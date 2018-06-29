@@ -1,10 +1,10 @@
 name:                GitStars
 version:             0.1.0.0
-github:              "githubuser/GitStars"
+github:              "githubuser/agentultra"
 license:             BSD3
-author:              "Author name here"
-maintainer:          "example@example.com"
-copyright:           "2018 Author name here"
+author:              "James King"
+maintainer:          "james@agentultra.com"
+copyright:           "2018 James King"
 
 extra-source-files:
 - README.md
@@ -17,13 +17,59 @@ extra-source-files:
 # To avoid duplicated efforts in documentation and dealing with the
 # complications of embedding Haddock markup inside cabal files, it is
 # common to point users to the README.md file.
-description:         Please see the README on GitHub at <https://github.com/githubuser/GitStars#readme>
+description: Please see the README on GitHub at <https://github.com/githubuser/GitStars#readme>
 
 dependencies:
 - base >= 4.7 && < 5
+- protolude
+
+default-extensions:
+- ApplicativeDo
+- BangPatterns
+- ConstraintKinds
+- DataKinds
+- DefaultSignatures
+- DeriveFoldable
+- DeriveFunctor
+- DeriveGeneric
+- DeriveLift
+- DeriveTraversable
+- DerivingStrategies
+- DuplicateRecordFields
+- OverloadedLabels
+- EmptyCase
+- EmptyDataDecls
+- ExistentialQuantification
+- FlexibleContexts
+- FlexibleInstances
+- FunctionalDependencies
+- GADTs
+- GeneralizedNewtypeDeriving
+- InstanceSigs
+- KindSignatures
+- LambdaCase
+- MultiParamTypeClasses
+- MultiWayIf
+- NamedFieldPuns
+- NoImplicitPrelude
+- OverloadedStrings
+- PatternSynonyms
+- PolyKinds
+- RankNTypes
+- RecordWildCards
+- ScopedTypeVariables
+- StandaloneDeriving
+- TupleSections
+- TypeApplications
+- TypeFamilies
+- TypeFamilyDependencies
+- TypeOperators
 
 library:
   source-dirs: src
+  dependencies:
+    - aeson
+    - http-client
 
 executables:
   GitStars-exe:
