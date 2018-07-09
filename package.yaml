@@ -69,10 +69,17 @@ library:
   source-dirs: src
   dependencies:
     - aeson
+    - aeson-casing
+    - attoparsec
+    - case-insensitive
     - http-client
+    - http-client-tls
+    - lens
+    - text
+    - time
 
 executables:
-  GitStars-exe:
+  gitstars:
     main:                Main.hs
     source-dirs:         app
     ghc-options:
